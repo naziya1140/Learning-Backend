@@ -6,7 +6,6 @@ console.log(fs);
 // fs.writeFileSync('Naziya.txt', 'Hello, Naziya!');
 // console.log('ending');
 
-
 // To write asynchronously
 console.log('starting');
 fs.writeFile('Naziya2.txt', 'Hi what are you doing?', () => {
