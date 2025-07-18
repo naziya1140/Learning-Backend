@@ -40,7 +40,6 @@ const url = require('url');
 //     console.log(`server running at http://${x}:${port}`)
 // });
 
-
 const myServer2 = http.createServer((req, res) => {
     let date = new Date().toLocaleTimeString();
     let string = `A new request has been received on: ${req.url} at Time: ${date}\n`; 
