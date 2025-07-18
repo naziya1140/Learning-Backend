@@ -16,7 +16,7 @@ app.use((req, res, next)=>{
     console.log(req.topic);
     next();
 });
-console.log('After executing all middlewares.');
+console.log('After executing all middlewares');
 
 
 app.get('/users', (req, res) => {
