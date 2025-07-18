@@ -15,5 +15,4 @@ app.get("/about", (req, res)=>{
 //two ways of returning
 // -->res.end('no need to return')
 // -->return res.send('return the value as well as end it.')
-
 app.listen(8000, ()=>console.log(`Server Started`));//binding the function with the current port.
