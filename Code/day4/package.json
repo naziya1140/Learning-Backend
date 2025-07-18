@@ -1,0 +1,14 @@
+{
+  "name": "http-module",
+  "version": "1.0.0",
+  "description": "This contains details about how to use http module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "url": "^0.11.4"
+  }
+}

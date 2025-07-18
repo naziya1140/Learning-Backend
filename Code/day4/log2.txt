@@ -1,0 +1,29 @@
+this is understanding the url part.A new request has been received on: / at Time: 9:46:41 PM
+A new request has been received on: / at Time: 9:47:03 PM
+
+A new request has been received on: / at Time: 9:51:19 PM
+A new request has been received on: /favicon.ico at Time: 9:51:19 PM
+A new request has been received on: / at Time: 9:52:24 PM
+A new request has been received on: /about at Time: 9:52:30 PM
+A new request has been received on: /contacts at Time: 9:52:36 PM
+A new request has been received on: /?username=naziya&serach=javascript+tic+tac+toe at Time: 9:53:36 PM
+A new request has been received on: / at Time: 10:22:18 PM
+A new request has been received on: /favicon.ico at Time: 10:22:18 PM
+A new request has been received on: / at Time: 10:22:45 PM
+
+A new request has been received on: /?username=naziya&serach=tic+tac+toe at Time: 10:23:59 PM
+A new request has been received on: / at Time: 10:24:34 PM
+
+A new request has been received on: / at Time: 10:25:21 PM
+A new request has been received on: /?username=naziya/ at Time: 10:25:57 PM
+A new request has been received on: /?username=naziya&search=tic+tac+toe at Time: 10:26:18 PM
+A new request has been received on: /?username=naziya&searchval=tic+tac+toe at Time: 10:26:55 PM
+A new request has been received on: /serach/?username=naziya&searchval=tic+tac+toe at Time: 10:27:11 PM
+A new request has been received on: /serach?username=naziya&searchval=tic+tac+toe at Time: 10:27:19 PM
+A new request has been received on: /serach at Time: 10:27:25 PM
+A new request has been received on: /search/?username=naziya&searchval=tic+tac+toe at Time: 10:27:41 PM
+A new request has been received on: /search?searchval=tic+tac+toe at Time: 10:28:29 PM
+A new request has been received on: / at Time: 12:02:45 AM
+A new request has been received on: /signup at Time: 12:02:58 AM
+A new request has been received on: / at Time: 12:04:22 AM
+A new request has been received on: / at Time: 12:05:40 AM
