@@ -11,9 +11,12 @@ const server = http.createServer((req, res) => {
     res.end('Hello, World!\n');//passing the data.
 });
 
+
 server.listen(port, () => {
     console.log(`server running at http://${host}:${port}`);//binds the server with given port, whenever a request will be made on the particular port, it will be executed. 
 });
+
+
 
 
 
