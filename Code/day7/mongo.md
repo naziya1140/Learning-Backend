@@ -16,7 +16,6 @@
 4. db.<col_name>.findOne({key : value})--->finding single value that satisfies the value.
 
 
-
 ## good practice is to write the field value in quotes.
 ## MongoDB is case sensitive.
 
