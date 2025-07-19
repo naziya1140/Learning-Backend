@@ -1,8 +1,43 @@
 const express = require('express');
-const data = require('./MOCK_DATA.json');
+const mongoose = require("mongoose");
 const fs = require('fs');
 
+const data = require('./MOCK_DATA.json');
+const PORT = 8000;
+
 const app = express();//creating handler function
+
+//creating a schema according to your data.
+const userSchema = new mongoose.Schema({
+    firstName: {
+        type: String, 
+        required: true
+    }, 
+    lastName: {
+        type: String
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    gender: {
+        type: String,
+        required: true
+    },
+    job_title: {
+        type: Stiri
+    }
+});
+//connecting mongoose, we have got the url from mongo Shell.
+//This connect will return a promise.
+mongoose.connect('mongodb://127.0.0.1:27017/learning')
+.then(()=>console.log("MongoDB connected"))
+.catch(()=>console.log())
+
+//creating a model.
+//Here the first parameter is a name for the model while the second parameter is the schema
+const User = mongoose.model("user", userSchema)
 
 //adding a middleware plugin
 app.use(express.urlencoded({extended: false}));
@@ -34,19 +69,6 @@ app.get('/api/users', (req, res) => {
     res.json(data);//entire data will be displayed in json format.
 });
 
-//all the route for post, patch and delete is same so it can be done using another way.
-// app.post('/api/users/:id', (req, res)=>{
-//     res.end("A post request has been received.");
-// });
-
-// app.patch('/api/users/:id', (req, res)=>{
-//     res.end("A patch request has been received.");
-// });
-
-// app.delete('/api/users/:id', (req, res)=>{
-//     res.end(`A delete request for user ${req.params.id} request has been received.`);
-// });
-
 app.
 route('/api/users/:id')
 .get((req, res) => {
@@ -66,25 +88,31 @@ route('/api/users/:id')
 
 
 // we will make post request using POSTMAN
-app.post('/api/users', (req, res) => {
+app.post('/api/users', async (req, res) => {
     let newData = req.body;
     console.log(newData);
 
-    data.push({ ...newData, id: data.length + 1 });
-    console.log(data);
+    if(
+        !body || !body.firstName || !body.lastName || 
+        !body.email || !body.gender || !body.job_title
+    ){
+        return res.status(400).json({msg: "All "})
+    }
 
-    fs.writeFile('./MOCK_DATA.json', JSON.stringify(data), (err) => {
-        if (err) {
-            console.log("Error Occurred");
-            res.status(500).send("Failed to write data.");
-        } else {
-            console.log("Data Appended");
-            res.status(201).send("User added successfully.");
-        }
-    });
+    await User.create({
+        firstName = body.firstName,
+        lastName = body.lastName,
+        email = body.email,
+
+    })
+
+
+
+    
 });
 
 //Binding handler function with correct port.
-app.listen(8000, ()=>{
+app.listen(PORT, ()=>{
     console.log('Server started!');
 });
+

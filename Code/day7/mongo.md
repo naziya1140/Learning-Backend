@@ -94,6 +94,9 @@ If there are multiple condition then do not use second curly brackets as it is f
 
 
 
+## $expr
+db.sales.find({$expr: {$gt: [{$multiply: ['$price ','$quantity']}, '$targetPrice'] } } );
+
 ## Update operation 
 ==> db.data.updateOne({condition}, {$set: {fieldName: newValue}});
 ==> db.data.updateOne({_id: ObjectId('68762bd0d341d3df6f105eea')}, {$set : {'price ':129.99, 'price ': 34}});
@@ -188,4 +191,4 @@ you can also use $limit and $skip in a separate {}.
 
 $filter is used on the elements of array.
 Returns an array with only those elements that match the condition. 
- db.col.aggregate([{$project: { name: 1, values: {$filter: {input: '$values', as: 'val', cond: {$gte: ['$$val', 30] } } } } } ] );
+db.col.aggregate( [ { $project: { name: 1, values: {$filter: {input: '$values', as: 'val', cond: {$gte: ['$$val', 30] } } } } } ] );

@@ -1,7 +1,7 @@
 const fs = require('fs');
 console.log(fs);
 
-//not a good way of writing as it is a blocking code(way of writing).
+// not a good way of writing as it is a blocking code(way of writing).
 // console.log('starting');
 // fs.writeFileSync('Naziya.txt', 'Hello, Naziya!');
 // console.log('ending');
