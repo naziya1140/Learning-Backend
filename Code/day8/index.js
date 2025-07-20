@@ -86,8 +86,6 @@ route('/api/users/:id')
     //delete a entry point of given id.
 })
 
-
-// we will make post request using POSTMAN
 app.post('/api/users', async (req, res) => {
     let newData = req.body;
     console.log(newData);
