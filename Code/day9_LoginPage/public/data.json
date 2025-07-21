@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "password": "Alice@1234",
+    "isLoggedIn": false
+  },
+  {
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "password": "BobSecure99!",
+    "isLoggedIn": true
+  },
+  {
+    "name": "Carol White",
+    "email": "carol.white@example.com",
+    "password": "PassCarol#1",
+    "isLoggedIn": false
+  },
+  {
+    "name": "David Brown",
+    "email": "david.brown@example.com",
+    "password": "David123$",
+    "isLoggedIn": true
+  },
+  {
+    "name": "Eva Green",
+    "email": "eva.green@example.com",
+    "password": "Green*Eva789",
+    "isLoggedIn": false
+  },
+  {
+    "name": "Frank Miller",
+    "email": "frank.miller@example.com",
+    "password": "Frank@2023!",
+    "isLoggedIn": false
+  },
+  {
+    "name": "Grace Lee",
+    "email": "grace.lee@example.com",
+    "password": "GraceLee##98",
+    "isLoggedIn": true
+  },
+  {
+    "name": "Henry Wilson",
+    "email": "henry.wilson@example.com",
+    "password": "Henry_W1lson",
+    "isLoggedIn": false
+  },
+  {
+    "name": "Ivy Adams",
+    "email": "ivy.adams@example.com",
+    "password": "IvyAdams@77",
+    "isLoggedIn": true
+  },
+  {
+    "name": "Jake Turner",
+    "email": "jake.turner@example.com",
+    "password": "Jake_T!234",
+    "isLoggedIn": false
+  }
+]
